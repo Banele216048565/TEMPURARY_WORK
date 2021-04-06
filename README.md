@@ -14,8 +14,6 @@ would you like an application that reminds you to replace gas cylinders and allo
 
 do you have any suggestions for features that would make this application more attractive for you ?
 
-Any other feature that can be added to the system?
-
 What forms of payment method best suits their needs?
 
 What is the minimum time taken to refill gas?
