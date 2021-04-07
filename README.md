@@ -20,5 +20,12 @@ What is the minimum time taken to refill gas?
 
 Any risks they expect or enticipate with such a system?
 
+Where do you get your gas/fuel from?
+
+How do you communicate with your supplier if so for delivery?
+
+How reliable is your current supplier?
+
+When they service or test your stoves and generators, do they need fuel to do so and how often is such a service required?
 
 
