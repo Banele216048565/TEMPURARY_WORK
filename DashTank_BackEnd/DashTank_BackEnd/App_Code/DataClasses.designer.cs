@@ -21,6 +21,7 @@ using System.Reflection;
 
 
 
+[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DashTankDatabase")]
 public partial class DataClassesDataContext : System.Data.Linq.DataContext
 {
 	
@@ -28,7 +29,16 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
 	
   #region Extensibility Method Definitions
   partial void OnCreated();
+  partial void InsertUser(User instance);
+  partial void UpdateUser(User instance);
+  partial void DeleteUser(User instance);
   #endregion
+	
+	public DataClassesDataContext() : 
+			base(global::System.Configuration.ConfigurationManager.ConnectionStrings["DashTankDatabaseConnectionString"].ConnectionString, mappingSource)
+	{
+		OnCreated();
+	}
 	
 	public DataClassesDataContext(string connection) : 
 			base(connection, mappingSource)
@@ -52,6 +62,196 @@ public partial class DataClassesDataContext : System.Data.Linq.DataContext
 			base(connection, mappingSource)
 	{
 		OnCreated();
+	}
+	
+	public System.Data.Linq.Table<User> Users
+	{
+		get
+		{
+			return this.GetTable<User>();
+		}
+	}
+}
+
+[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.[User]")]
+public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
+{
+	
+	private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+	
+	private int _UserId;
+	
+	private string _UserName;
+	
+	private string _UserSurname;
+	
+	private string _UserEmail;
+	
+	private string _UserContact;
+	
+	private string _UserPassword;
+	
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnUserIdChanging(int value);
+    partial void OnUserIdChanged();
+    partial void OnUserNameChanging(string value);
+    partial void OnUserNameChanged();
+    partial void OnUserSurnameChanging(string value);
+    partial void OnUserSurnameChanged();
+    partial void OnUserEmailChanging(string value);
+    partial void OnUserEmailChanged();
+    partial void OnUserContactChanging(string value);
+    partial void OnUserContactChanged();
+    partial void OnUserPasswordChanging(string value);
+    partial void OnUserPasswordChanged();
+    #endregion
+	
+	public User()
+	{
+		OnCreated();
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+	public int UserId
+	{
+		get
+		{
+			return this._UserId;
+		}
+		set
+		{
+			if ((this._UserId != value))
+			{
+				this.OnUserIdChanging(value);
+				this.SendPropertyChanging();
+				this._UserId = value;
+				this.SendPropertyChanged("UserId");
+				this.OnUserIdChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserName", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+	public string UserName
+	{
+		get
+		{
+			return this._UserName;
+		}
+		set
+		{
+			if ((this._UserName != value))
+			{
+				this.OnUserNameChanging(value);
+				this.SendPropertyChanging();
+				this._UserName = value;
+				this.SendPropertyChanged("UserName");
+				this.OnUserNameChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserSurname", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+	public string UserSurname
+	{
+		get
+		{
+			return this._UserSurname;
+		}
+		set
+		{
+			if ((this._UserSurname != value))
+			{
+				this.OnUserSurnameChanging(value);
+				this.SendPropertyChanging();
+				this._UserSurname = value;
+				this.SendPropertyChanged("UserSurname");
+				this.OnUserSurnameChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserEmail", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+	public string UserEmail
+	{
+		get
+		{
+			return this._UserEmail;
+		}
+		set
+		{
+			if ((this._UserEmail != value))
+			{
+				this.OnUserEmailChanging(value);
+				this.SendPropertyChanging();
+				this._UserEmail = value;
+				this.SendPropertyChanged("UserEmail");
+				this.OnUserEmailChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserContact", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+	public string UserContact
+	{
+		get
+		{
+			return this._UserContact;
+		}
+		set
+		{
+			if ((this._UserContact != value))
+			{
+				this.OnUserContactChanging(value);
+				this.SendPropertyChanging();
+				this._UserContact = value;
+				this.SendPropertyChanged("UserContact");
+				this.OnUserContactChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserPassword", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+	public string UserPassword
+	{
+		get
+		{
+			return this._UserPassword;
+		}
+		set
+		{
+			if ((this._UserPassword != value))
+			{
+				this.OnUserPasswordChanging(value);
+				this.SendPropertyChanging();
+				this._UserPassword = value;
+				this.SendPropertyChanged("UserPassword");
+				this.OnUserPasswordChanged();
+			}
+		}
+	}
+	
+	public event PropertyChangingEventHandler PropertyChanging;
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	
+	protected virtual void SendPropertyChanging()
+	{
+		if ((this.PropertyChanging != null))
+		{
+			this.PropertyChanging(this, emptyChangingEventArgs);
+		}
+	}
+	
+	protected virtual void SendPropertyChanged(String propertyName)
+	{
+		if ((this.PropertyChanged != null))
+		{
+			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
 	}
 }
 #pragma warning restore 1591
