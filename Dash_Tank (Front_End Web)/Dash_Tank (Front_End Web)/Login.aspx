@@ -26,8 +26,8 @@
 <body>
     <div class="login-page vh-100">
         <video loop autoplay muted id="vid">
-            <source src="img/bg.mp4" type="video/mp4">
-            <source src="img/bg.mp4" type="video/ogg">
+            <source src="img/fuelpumpvid (2).mp4" type="video/mp4">
+            <source src="img/fuelpumpvid (2).mp4" type="video/ogg">
             Your browser does not support the video tag.
          </video>
         <div class="d-flex align-items-center justify-content-center vh-100">
