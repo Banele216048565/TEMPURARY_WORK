@@ -213,7 +213,7 @@
                         <ul class="list-unstyled hov_footer">
                             <li> <a href="trending.html" class="text-muted"> Trending </a></li>
                             <li> <a href="most_popular.html" class="text-muted"> Most popular </a></li>
-                            <li> <a href="restaurant.html" class="text-muted"> Restaurant Details </a></li>
+                            <li> <a href="restaurant.html" class="text-muted"> Fuel station Details </a></li>
                             <li> <a href="favorites.html" class="text-muted"> Favorites </a></li>
                         </ul>
                     </aside>
@@ -293,7 +293,7 @@
             <li><a href="favorites.html"><i class="feather-heart mr-2"></i> Favorites</a></li>
             <li><a href="trending.html"><i class="feather-trending-up mr-2"></i> Trending</a></li>
             <li><a href="most_popular.html"><i class="feather-award mr-2"></i> Most Popular</a></li>
-            <li><a href="restaurant.html"><i class="feather-paperclip mr-2"></i> Restaurant Detail</a></li>
+            <li><a href="restaurant.html"><i class="feather-paperclip mr-2"></i> Fuel station Detail</a></li>
             <li><a href="checkout.html"><i class="feather-list mr-2"></i> Checkout</a></li>
             <li><a href="successful.html"><i class="feather-check-circle mr-2"></i> Successful</a></li>
             <li><a href="map.html"><i class="feather-map-pin mr-2"></i> Live Map</a></li>
