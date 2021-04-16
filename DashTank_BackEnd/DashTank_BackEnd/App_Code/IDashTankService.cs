@@ -10,5 +10,10 @@ using System.Text;
 public interface IDashTankService
 {
     [OperationContract]
-    void DoWork();
+    void Login(String Email,String Password);
+
+    [OperationContract]
+    void Register(String name, String surname, String email, String contact, String Password, String ConfirmPassword);
+
+    [OperationContract]
 }

@@ -1,1 +1,161 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DashTankDatabase" Class="DashTankDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DashTankDatabase.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DashTankDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Contacts" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Association Name="User_Admin" Member="Admins" ThisKey="ID" OtherKey="ID" Type="Admin" />
+      <Association Name="User_Supplier" Member="Suppliers" ThisKey="ID" OtherKey="ID" Type="Supplier" />
+      <Association Name="User_Client" Member="Clients" ThisKey="ID" OtherKey="ID" Type="Client" />
+      <Association Name="User_Driver" Member="Drivers" ThisKey="ID" OtherKey="ID" Type="Driver" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Admin" Member="Admins">
+    <Type Name="Admin">
+      <Column Name="Admin_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Profile_image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="User_Admin" Member="User" ThisKey="ID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Supplier" Member="Suppliers">
+    <Type Name="Supplier">
+      <Column Name="Supplier_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Supplier_Product" Member="Products" ThisKey="Supplier_ID" OtherKey="Supplier_ID" Type="Product" />
+      <Association Name="User_Supplier" Member="User" ThisKey="ID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Client" Member="Clients">
+    <Type Name="Client">
+      <Column Name="Client_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Profile_image" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="Client_Cart" Member="Carts" ThisKey="Client_ID" OtherKey="Client_ID" Type="Cart" />
+      <Association Name="Client_Promotion" Member="Promotions" ThisKey="Client_ID" OtherKey="Client_ID" Type="Promotion" />
+      <Association Name="Client_Refund" Member="Refunds" ThisKey="Client_ID" OtherKey="Client_ID" Type="Refund" />
+      <Association Name="Client_Review" Member="Reviews" ThisKey="Client_ID" OtherKey="Client_ID" Type="Review" />
+      <Association Name="Client_Order" Member="Orders" ThisKey="Client_ID" OtherKey="Client_ID" Type="Order" />
+      <Association Name="User_Client" Member="User" ThisKey="ID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Driver" Member="Drivers">
+    <Type Name="Driver">
+      <Column Name="Driver_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Licence_Number" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="Vehicle_Type" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="Reg_Plate" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Vehicle_Name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NumberOfOrders" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Profile_image" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Driver_Order" Member="Orders" ThisKey="Driver_ID" OtherKey="Driver_ID" Type="Order" />
+      <Association Name="User_Driver" Member="User" ThisKey="ID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cart" Member="Carts">
+    <Type Name="Cart">
+      <Column Name="Cart_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Client_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cart_Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Cart_Active" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Cart_CartItem" Member="CartItems" ThisKey="Cart_ID" OtherKey="Cart_ID" Type="CartItem" />
+      <Association Name="Client_Cart" Member="Client" ThisKey="Client_ID" OtherKey="Client_ID" Type="Client" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CartItem" Member="CartItems">
+    <Type Name="CartItem">
+      <Column Name="CItem_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Product_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cart_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Cart_CartItem" Member="Cart" ThisKey="Cart_ID" OtherKey="Cart_ID" Type="Cart" IsForeignKey="true" />
+      <Association Name="Product_CartItem" Member="Product" ThisKey="Product_ID" OtherKey="Product_ID" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Product" Member="Products">
+    <Type Name="Product">
+      <Column Name="Product_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Supplier_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Product_Name" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Product_Description" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Product_Sale" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Product_Normal_Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Product_Sale_Price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Product_image" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Product_History" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="Product_CartItem" Member="CartItems" ThisKey="Product_ID" OtherKey="Product_ID" Type="CartItem" />
+      <Association Name="Product_Order" Member="Orders" ThisKey="Product_ID" OtherKey="Product_ID" Type="Order" />
+      <Association Name="Supplier_Product" Member="Supplier" ThisKey="Supplier_ID" OtherKey="Supplier_ID" Type="Supplier" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Promotion" Member="Promotions">
+    <Type Name="Promotion">
+      <Column Name="Promotion_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Client_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Promotion_Code" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Supplier_Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Promotion_Valitty_Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Promotion_Amount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="Promotion_Order" Member="Orders" ThisKey="Promotion_ID" OtherKey="Promotion_ID" Type="Order" />
+      <Association Name="Client_Promotion" Member="Client" ThisKey="Client_ID" OtherKey="Client_ID" Type="Client" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Refund" Member="Refunds">
+    <Type Name="Refund">
+      <Column Name="Refund_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Client_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Refund_Reason" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Admin_Feedback" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Client_Refund" Member="Client" ThisKey="Client_ID" OtherKey="Client_ID" Type="Client" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Review" Member="Reviews">
+    <Type Name="Review">
+      <Column Name="Review_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Order_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Client_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Review_Rating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Review_Reason" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="Client_Review" Member="Client" ThisKey="Client_ID" OtherKey="Client_ID" Type="Client" IsForeignKey="true" />
+      <Association Name="Order_Review" Member="Order" ThisKey="Order_ID" OtherKey="Order_ID" Type="Order" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Transation" Member="Transations">
+    <Type Name="Transation">
+      <Column Name="Transaction_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Order_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Transaction_amount" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Transaction_Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Order_Transation" Member="Order" ThisKey="Order_ID" OtherKey="Order_ID" Type="Order" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="Order_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Client_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Product_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Promotion_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Driver_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Order_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="OrderStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Car_NoPlate" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="Order_Review" Member="Reviews" ThisKey="Order_ID" OtherKey="Order_ID" Type="Review" />
+      <Association Name="Order_Transation" Member="Transations" ThisKey="Order_ID" OtherKey="Order_ID" Type="Transation" />
+      <Association Name="Client_Order" Member="Client" ThisKey="Client_ID" OtherKey="Client_ID" Type="Client" IsForeignKey="true" />
+      <Association Name="Driver_Order" Member="Driver" ThisKey="Driver_ID" OtherKey="Driver_ID" Type="Driver" IsForeignKey="true" />
+      <Association Name="Product_Order" Member="Product" ThisKey="Product_ID" OtherKey="Product_ID" Type="Product" IsForeignKey="true" />
+      <Association Name="Promotion_Order" Member="Promotion" ThisKey="Promotion_ID" OtherKey="Promotion_ID" Type="Promotion" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
