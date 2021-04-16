@@ -186,7 +186,7 @@
                         <h6 class="title">Error Pages</h6>
                         <ul class="list-unstyled hov_footer">
                             <li> <a href="not-found.html" class="text-muted">Not found</a></li>
-                            <li> <a href="maintence.html" class="text-muted">Maintence</a></li>
+                            <li> <a href="Maintenance.aspx" class="text-muted">Maintence</a></li>
                             <li> <a href="coming-soon.html" class="text-muted">Coming Soon</a></li>
                         </ul>
                     </aside>
