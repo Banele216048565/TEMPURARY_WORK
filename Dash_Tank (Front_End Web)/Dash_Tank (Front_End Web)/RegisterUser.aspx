@@ -38,7 +38,7 @@
                 <div class="px-5 col-10 mx-auto">
                     <h2 class="text-dark my-0">Hello There.</h2>
                     <p class="text-50">Sign up to continue</p>
-                    <form class="mt-5 mb-4" action="verification.html">
+                    <form class="mt-5 mb-4" action="verification.html" runat="server">
                         <div class="form-group">
                             <label for="exampleInputName1" class="text-dark">Name</label>
                             <input type="text" placeholder="Enter Name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
@@ -63,12 +63,13 @@
                             <label for="exampleInputPassword1" class="text-dark">Confirm Password</label>
                             <input type="password" placeholder="Enter Password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <button class="btn btn-primary btn-lg btn-block">
-                           SIGN UP
-                        </button>
-                        <button class="btn btn-primary btn-lg btn-block">
-                           Login
-                        </button>
+
+                        <asp:Button id="Register" runat="server" Text="SIGN UP" class="btn btn-primary btn-lg btn-block" OnClick="Register_Click" />
+                        <div class="py-2">
+
+                            <a href="Login.aspx" class="btn btn-primary btn-lg btn-block"> SIGN IN </a>
+
+                        </div>
                         
                     </form>
                 </div>

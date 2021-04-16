@@ -7,18 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace Dash_Tank__Front_End_Web_
 {
-    public partial class RegisterUser : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Register_Click(object sender, EventArgs e)
+       
+        protected void Login_Click(object sender, EventArgs e)
         {
             
         }
-
-        
     }
 }
