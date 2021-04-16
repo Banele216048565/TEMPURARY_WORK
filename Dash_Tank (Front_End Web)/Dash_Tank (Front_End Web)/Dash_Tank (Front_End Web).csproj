@@ -176,11 +176,7 @@
     <Content Include="img\user\4.jpg" />
     <Content Include="img\user\5.jpg" />
     <Content Include="js\osahan.js" />
-<<<<<<< HEAD
-    <Content Include="Maintenance.aspx" />
-=======
     <Content Include="Login.aspx" />
->>>>>>> main
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.dll" />
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.pdb" />
@@ -238,21 +234,12 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Maintenance.aspx.cs">
-      <DependentUpon>Maintenance.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Maintenance.aspx.designer.cs">
-      <DependentUpon>Maintenance.aspx</DependentUpon>
-=======
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
->>>>>>> main
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
