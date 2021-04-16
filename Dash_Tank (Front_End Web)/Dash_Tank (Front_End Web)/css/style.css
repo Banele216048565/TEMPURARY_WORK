@@ -27,12 +27,6 @@ Version: 1.0
 -- Footer
 -- Mobile Media
 */
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 #fcf-form {
     display: block;
 }
