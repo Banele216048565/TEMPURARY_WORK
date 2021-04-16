@@ -11,16 +11,16 @@ namespace Dash_Tank__Front_End_Web_
 {
 
 
-    public partial class RegisterUser
+    public partial class Login
     {
 
         /// <summary>
-        /// Register control.
+        /// Login1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Register;
+        protected global::System.Web.UI.WebControls.Button Login1;
     }
 }
