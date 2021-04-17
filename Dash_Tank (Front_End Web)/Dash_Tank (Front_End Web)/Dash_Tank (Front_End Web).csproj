@@ -184,6 +184,7 @@
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.dll" />
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.pdb" />
     <Content Include="RegisterDriver.aspx" />
+    <Content Include="RegisterSupplier.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -274,6 +275,13 @@
     </Compile>
     <Compile Include="RegisterDriver.aspx.designer.cs">
       <DependentUpon>RegisterDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterSupplier.aspx.cs">
+      <DependentUpon>RegisterSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterSupplier.aspx.designer.cs">
+      <DependentUpon>RegisterSupplier.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserLogin.aspx.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>

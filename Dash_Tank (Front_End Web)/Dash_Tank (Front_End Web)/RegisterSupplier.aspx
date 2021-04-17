@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dash-Tank.Master" AutoEventWireup="true" CodeBehind="RegisterDriver.aspx.cs" Inherits="Dash_Tank__Front_End_Web_.RegisterDriver" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dash-Tank.Master" AutoEventWireup="true" CodeBehind="RegisterSupplier.aspx.cs" Inherits="Dash_Tank__Front_End_Web_.RegisterSupplier" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -94,45 +94,32 @@
                 </div>
                 <div class="col-md-8 mb-3">
                     <div class="rounded shadow-sm p-4 bg-white">
-                        <h5 class="mb-4">Register To Drive For Dash-Tank</h5>
+                        <h5 class="mb-4">Register As Supplier For Dash-Tank</h5>
                         <div id="edit_profile">
                             <div>
                                 <form action="my_account.html" runat="server">
+                                    
+                                    
                                     <div class="form-group">
-                                        <label for="exampleInputName1">Gender</label>
-                                        <input type="text" placeholder="Choose Gender" class="form-control" id="exampleInputName1d" list="gender">
-                                        <datalist id="gender">
-                                            <option>Male</option>
-                                            <option>Female</option>
+                                        <label for="exampleInputNumber1">Fuel Station Name</label>
+                                        <input type="text" placeholder="Choose Fuel Station" class="form-control" id="exampleInputNumber1" list="FName">
+                                        <datalist id="FName">
+                                            <option>Engen</option>
+                                            <option>Sasol</option>
+                                            <option>Shell</option>
+                                            <option>BP</option>
+                                            <option>Caltex</option>
+                                            <option>Total</option>
                                         </datalist>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <label for="exampleInputName1">Date Of Birth</label>
-                                        <input type="date" placeholder="Enter DOB" class="form-control" id="exampleInputName1" >
+                                        <label for="exampleInputEmail1">Fuel Station Address</label>
+                                        <input type="text" placeholder="Enter Fuel Station Address" class="form-control" id="exampleInputEmail1" >
                                     </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputNumber1">License Number</label>
-                                        <input type="text" placeholder="Enter License Number" class="form-control" id="exampleInputNumber1" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Vehicle Type</label>
-                                        <input type="text" placeholder="Enter Vehicle Type" class="form-control" id="exampleInputEmail1" list="Vtype">
-                                        <datalist id="Vtype">
-                                            <option>Scooter</option>
-                                            <option>Light-Motor Vehicle</option>
-                                            <option>Van</option>
-                                        </datalist>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Vehicle Name</label>
-                                        <input type="text" placeholder="Enter Vehicle Name" class="form-control" id="exampleInputEmail1" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Number Plate</label>
-                                        <input type="text" placeholder="Enter Number Plate" class="form-control" id="exampleInputEmail1" >
-                                    </div>
+                                    
 
-                                    <asp:Button id="registerdriver" runat="server" Text="Register As Driver" class="btn btn-primary btn-block" OnClick="RegisterDriver_Click" />
+                                    <asp:Button id="registersupplier" runat="server" Text="Register As Supplier" class="btn btn-primary btn-block" OnClick="RegisterSupplier_Click" />
                         
                                 </form>
                             </div>
