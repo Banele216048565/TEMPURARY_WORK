@@ -285,7 +285,7 @@
                 <ul>
                     <li><a href="Login.aspx">Login</a></li>
                     <li>
-                        <a href="RegisterUser.aspx"><i class="feather-edit-2 mr-2"></i> Register</a>
+                        <a href="#"><i class="feather-edit-2 mr-2"></i> Register</a>
                             <ul>
 
                                 <li><a href="RegisterUser.aspx">Register</a></li>
