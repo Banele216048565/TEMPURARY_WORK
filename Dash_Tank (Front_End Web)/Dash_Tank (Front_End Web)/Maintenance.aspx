@@ -24,4 +24,6 @@
 <br />   
 </div>
 </body>
+        
 </asp:Content>
+<%--//code from https://www.sanwebcorner.com/2017/09/how-to-create-simple-maintenance-page.html--%>
