@@ -184,6 +184,7 @@
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.dll" />
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.pdb" />
+    <Content Include="OrderSuccess.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="RegisterDriver.aspx" />
     <Content Include="RegisterSupplier.aspx" />
@@ -277,6 +278,13 @@
       <DependentUpon>NewRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="OrderSuccess.aspx.cs">
+      <DependentUpon>OrderSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderSuccess.aspx.designer.cs">
+      <DependentUpon>OrderSuccess.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -30,7 +30,7 @@
                                                 <h6 class="mb-0">Home</h6>
                                                 <p class="mb-0 badge badge-success ml-auto"><i class="icofont-check-circled"></i> Default</p>
                                              </div>
-                                             <p class="small text-muted m-0"> 5Goodenville Pretoria</p>
+                                             <p class="small text-muted m-0"> 5 Goodenville Pretoria</p>
                                              <p class="small text-muted m-0">Gauteng, South Africa</p>
                                           </div>
                                           <a href="#"  data-toggle="modal" data-target="#exampleModal" class="btn btn-block btn-light border-top">Edit</a>
