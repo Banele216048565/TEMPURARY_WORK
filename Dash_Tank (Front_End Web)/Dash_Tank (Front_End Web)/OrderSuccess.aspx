@@ -22,7 +22,7 @@
                 <h6 class="font-weight-bold mb-2">Preparing your order</h6>
                 <h6 class="font-weight-bold mb-2">Thank you for using </h6><h6 class="font-weight-bold mb-2" style =" color: #228B22">DashTank</h6>
                 <p class="small text-muted">Your order will be prepared and will come soon</p>
-                <a href="status_onprocess.html" class="btn rounded btn-primary btn-lg btn-block">Track My Order</a>
+                <a href="StatusComplete.aspx" class="btn rounded btn-primary btn-lg btn-block">Track My Order</a>
             </div>
         </div>
     </div>
