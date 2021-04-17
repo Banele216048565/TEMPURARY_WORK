@@ -205,7 +205,7 @@
                             <h6 class="font-weight-bold mb-0">TO PAY <span class="float-right">R1329</span></h6>
                         </div>
                         <div class="p-3">
-                            <a class="btn btn-success btn-block btn-lg" href="Home.aspx">PAY R1329<i class="feather-arrow-right"></i></a>
+                            <a class="btn btn-success btn-block btn-lg" href="OrderSuccess.aspx">PAY R1329<i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
