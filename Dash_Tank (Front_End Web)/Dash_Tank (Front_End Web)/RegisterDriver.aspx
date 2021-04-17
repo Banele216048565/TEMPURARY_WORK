@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dash-Tank.Master" AutoEventWireup="true" CodeBehind="UserLogin.aspx.cs" Inherits="Dash_Tank__Front_End_Web_.UserLogin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dash-Tank.Master" AutoEventWireup="true" CodeBehind="RegisterDriver.aspx.cs" Inherits="Dash_Tank__Front_End_Web_.RegisterDriver" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -47,7 +47,17 @@
             <div class="py-5 osahan-profile row">
                 <div class="col-md-4 mb-3">
                     <div class="bg-white rounded shadow-sm sticky_sidebar overflow-hidden">
-                        
+                        <a href="profile.html" class="">
+                            <div class="d-flex align-items-center p-3">
+                                <div class="left mr-3">
+                                    <img alt="#" src="img/user2.png" class="rounded-circle">
+                                </div>
+                                <div class="right">
+                                    <h6 class="mb-1 font-weight-bold">Dave Kim <i class="feather-check-circle text-success"></i></h6>
+                                    <p class="text-muted m-0 small">iamDaveKim@gmail.com</p>
+                                </div>
+                            </div>
+                        </a>
                         
                         <!-- profile-details -->
                         <div class="bg-white profile-details">
@@ -84,29 +94,46 @@
                 </div>
                 <div class="col-md-8 mb-3">
                     <div class="rounded shadow-sm p-4 bg-white">
-                        <h5 class="mb-4">Welcome Back To Dash-Tank</h5>
+                        <h5 class="mb-4">Register To Drive For Dash-Tank</h5>
                         <div id="edit_profile">
                             <div>
                                 <form action="my_account.html" runat="server">
-                                    
-                                    
-                                    
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Email Address</label>
-                                        <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1" value="Enter Email">
+                                        <label for="exampleInputName1">Gender</label>
+                                        <input type="text" placeholder="Choose Gender" class="form-control" id="exampleInputName1d" list="gender">
+                                        <datalist id="gender">
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </datalist>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Password</label>
-                                        <input type="password" placeholder="Enter Password" class="form-control" id="exampleInputEmail1" >
+                                        <label for="exampleInputName1">Date Of Birth</label>
+                                        <input type="date" placeholder="Enter DOB" class="form-control" id="exampleInputName1" >
                                     </div>
-                                    
+                                    <div class="form-group">
+                                        <label for="exampleInputNumber1">License Number</label>
+                                        <input type="text" placeholder="Enter License Number" class="form-control" id="exampleInputNumber1" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Vehicle Type</label>
+                                        <input type="text" placeholder="Enter Vehicle Type" class="form-control" id="exampleInputEmail1" list="Vtype">
+                                        <datalist id="Vtype">
+                                            <option>Scooter</option>
+                                            <option>Light-Motor Vehicle</option>
+                                            <option>Van</option>
+                                        </datalist>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Vehicle Name</label>
+                                        <input type="text" placeholder="Enter Vehicle Name" class="form-control" id="exampleInputEmail1" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Number Plate</label>
+                                        <input type="email" placeholder="Enter Number Plate" class="form-control" id="exampleInputEmail1" >
+                                    </div>
 
-                                    <asp:Button id="Login1" runat="server" Text="Login" class="btn btn-primary btn-block" OnClick="Login_Click" />
-                        <div class="py-2">
-
-                            <a href="NewRegister.aspx" class="btn btn-primary btn-block"> Register </a>
-
-                        </div>
+                                    <asp:Button id="registerdriver" runat="server" Text="Register As Driver" class="btn btn-primary btn-block" OnClick="RegisterDriver_Click" />
+                        
                                 </form>
                             </div>
                             

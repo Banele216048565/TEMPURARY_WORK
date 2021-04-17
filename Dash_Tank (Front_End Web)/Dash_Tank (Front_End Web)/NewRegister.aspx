@@ -54,14 +54,7 @@
                             
                             
                             
-                            <a href="faq.html" class="d-flex w-100 align-items-center border-bottom px-3 py-4">
-                                <div class="left mr-3">
-                                    <h6 class="font-weight-bold m-0 text-dark"><i class="feather-truck bg-danger text-white p-2 rounded-circle mr-2"></i> Delivery Support</h6>
-                                </div>
-                                <div class="right ml-auto">
-                                    <h6 class="font-weight-bold m-0"><i class="feather-chevron-right"></i></h6>
-                                </div>
-                            </a>
+                            
                             <a href="contact-us.html" class="d-flex w-100 align-items-center border-bottom px-3 py-4">
                                 <div class="left mr-3">
                                     <h6 class="font-weight-bold m-0 text-dark"><i class="feather-phone bg-primary text-white p-2 rounded-circle mr-2"></i> Contact</h6>
@@ -109,7 +102,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Email Address</label>
-                                        <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1" value="Enter Email">
+                                        <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1" >
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Password</label>
