@@ -113,6 +113,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
     <Content Include="Cart.aspx" />
     <Content Include="css\style.css" />
+    <Content Include="ForgotPassword.aspx" />
     <Content Include="Help.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="img\appstore.png" />
@@ -238,6 +239,13 @@
     </Compile>
     <Compile Include="Dash-Tank.Master.designer.cs">
       <DependentUpon>Dash-Tank.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Help.aspx.cs">
       <DependentUpon>Help.aspx</DependentUpon>
