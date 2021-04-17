@@ -8,32 +8,32 @@
             <div class="container">
                 <div class="offer-slider">
                     <div class="cat-item px-1 py-3">
-                        <a class="d-block text-center shadow-sm" href="trending.html">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
                             <img alt="#" src="img/engen-350x350.png" class="img-fluid rounded">
                         </a>
                     </div>
                     <div class="cat-item px-1 py-3">
-                        <a class="d-block text-center shadow-sm" href="trending.html">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
                             <img alt="#" src="img/caltex-logo.jpg" class="img-fluid rounded">
                         </a>
                     </div>
                     <div class="cat-item px-1 py-3">
-                        <a class="d-block text-center shadow-sm" href="trending.html">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
                             <img alt="#" src="img/Shell-Logo.png" class="img-fluid rounded">
                         </a>
                     </div>
                     <div class="cat-item px-1 py-3">
-                        <a class="d-block text-center shadow-sm" href="trending.html">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
                             <img alt="#" src="img/bp-logo-300x300.jpg" class="img-fluid rounded">
                         </a>
                     </div>
                     <div class="cat-item px-1 py-3">
-                        <a class="d-block text-center shadow-sm" href="trending.html">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
                             <img alt="#" src="img/Total-Logo.png" class="img-fluid rounded">
                         </a>
                     </div>
                     <div class="cat-item px-1 py-3">
-                        <a class="d-block text-center shadow-sm" href="trending.html">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
                             <img alt="#" src="img/Sasol-logo.jpg" class="img-fluid rounded">
                         </a>
                     </div>
