@@ -178,13 +178,11 @@
     <Content Include="img\user\4.jpg" />
     <Content Include="img\user\5.jpg" />
     <Content Include="js\osahan.js" />
-    <Content Include="Login.aspx" />
     <Content Include="Maintenance.aspx" />
     <Content Include="NewRegister.aspx" />
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.dll" />
     <Content Include="obj\Debug\Dash_Tank %28Front_End Web%29.pdb" />
-    <Content Include="RegisterUser.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -253,13 +251,6 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Maintenance.aspx.cs">
       <DependentUpon>Maintenance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -276,13 +267,6 @@
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterUser.aspx.cs">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RegisterUser.aspx.designer.cs">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
-    </Compile>
     <Compile Include="UserLogin.aspx.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

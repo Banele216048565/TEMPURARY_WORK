@@ -82,7 +82,7 @@
                                 </div>
                             </a>
                             <!-- signin -->
-                            <a href="Login.aspx" class="widget-header mr-4 text-dark m-none">
+                            <a href="UserLogin.aspx" class="widget-header mr-4 text-dark m-none">
                                 <div class="icon d-flex align-items-center">
                                     <i class="feather-user h6 mr-2 mb-0"></i> <span>Sign in</span>
                                 </div>
@@ -103,7 +103,7 @@
                                 </div>
                             </div>
                             <!-- signin -->
-                            <a href="checkout.html" class="widget-header mr-4 text-dark">
+                            <a href="Cart.aspx" class="widget-header mr-4 text-dark">
                                 <div class="icon d-flex align-items-center">
                                     <i class="feather-shopping-cart h6 mr-2 mb-0"></i> <span> My Cart</span>
                                 </div>
@@ -202,9 +202,9 @@
                     <aside class="col-sm-3  col-md-2 text-white">
                         <h6 class="title">For users</h6>
                         <ul class="list-unstyled hov_footer">
-                            <li> <a href="Login.aspx" class="text-muted"> User Login </a></li>
-                            <li> <a href="RegisterUser.aspx" class="text-muted"> User register </a></li>
-                            <li> <a href="forgot_password.html" class="text-muted"> Forgot Password </a></li>
+                            <li> <a href="UserLogin.aspx" class="text-muted"> User Login </a></li>
+                            <li> <a href="NewRegister.aspx" class="text-muted"> User register </a></li>
+                            <li> <a href="Account.aspx" class="text-muted"> Forgot Password </a></li>
                             <li> <a href="Account.aspx" class="text-muted"> Account Setting </a></li>
                         </ul>
                     </aside>
@@ -283,14 +283,14 @@
             <li>
                 <a href="#"><i class="feather-edit-2 mr-2"></i> Authentication</a>
                 <ul>
-                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="UserLogin.aspx">Login</a></li>
                     <li>
                         <a href="#"><i class="feather-edit-2 mr-2"></i> Register</a>
                             <ul>
 
-                                <li><a href="RegisterUser.aspx">Register</a></li>
-                                <li><a href="RegisterUser.aspx">Register As Driver</a></li>
-                                <li><a href="RegisterUser.aspx">Register As Supplier</a></li>
+                                <li><a href="NewRegister.aspx">Register</a></li>
+                                <li><a href="NewRegister.aspx">Register As Driver</a></li>
+                                <li><a href="NewRegister.aspx">Register As Supplier</a></li>
 
                             </ul>
                     </li>

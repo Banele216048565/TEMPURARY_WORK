@@ -45,7 +45,7 @@
                                             <p class="mb-0 small"><a href="status_complete.html">View Details</a></p>
                                         </div>
                                         <div class="ml-auto">
-                                            <p class="bg-success text-white py-1 px-2 rounded small mb-1">Delivered</p>
+                                            <p class="bg-success text-white py-1 px-2 rounded small mb-1"></p>
                                             <p class="small font-weight-bold text-center"><i class="feather-clock"></i> 06/04/2020</p>
                                         </div>
                                     </div>
@@ -58,8 +58,8 @@
                                             <span class="text-dark font-weight-bold">R600</span>
                                         </div>
                                         <div class="text-right">
-                                            <a href="checkout.html" class="btn btn-primary px-3">Reorder</a>
-                                            <a href="contact-us.html" class="btn btn-outline-primary px-3">Help</a>
+                                            <a href="checkout.html" class="btn btn-primary px-3">Order</a>
+                                            <a href="contact-us.html" class="btn btn-outline-primary px-3">Delete</a>
                                         </div>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@
                                             <p class="mb-0 small"><a href="status_complete.html">View Details</a></p>
                                         </div>
                                         <div class="ml-auto">
-                                            <p class="bg-success text-white py-1 px-2 rounded small mb-1">Delivered</p>
+                                            <p class="bg-success text-white py-1 px-2 rounded small mb-1"></p>
                                             <p class="small font-weight-bold text-center"><i class="feather-clock"></i> 06/04/2020</p>
                                         </div>
                                     </div>
@@ -90,8 +90,8 @@
                                             <span class="text-dark font-weight-bold">R600</span>
                                         </div>
                                         <div class="text-right">
-                                            <a href="checkout.html" class="btn btn-primary px-3">Reorder</a>
-                                            <a href="contact-us.html" class="btn btn-outline-primary px-3">Help</a>
+                                            <a href="checkout.html" class="btn btn-primary px-3">Order</a>
+                                            <a href="contact-us.html" class="btn btn-outline-primary px-3">Delete</a>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                                         </div>
                                         <div class="text-right">
                                             <a href="status_onprocess.html" class="btn btn-primary px-3">Track</a>
-                                            <a href="contact-us.html" class="btn btn-outline-primary px-3">Help</a>
+                                            <a href="contact-us.html" class="btn btn-outline-primary px-3">Delete</a>
                                         </div>
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@
                                         </div>
                                         <div class="text-right">
                                             <a href="status_onprocess.html" class="btn btn-primary px-3">Track</a>
-                                            <a href="contact-us.html" class="btn btn-outline-primary px-3">Help</a>
+                                            <a href="contact-us.html" class="btn btn-outline-primary px-3">Delete</a>
                                         </div>
                                     </div>
                                 </div>
