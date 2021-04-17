@@ -64,7 +64,7 @@
                                 <h6 class="mb-1"><a href="restaurant.html" class="text-black">95 Octane (ULP)
                               </a>
                                 </h6>
-                                <p class="text-gray mb-3">Engen PRIMAX Unleaded petrol</p>
+                                <p class="text-gray mb-3">Engen PRIMAX Unleaded Petrol</p>
                                 <p class="text-gray mb-3 time"><span class="bg-light text-dark rounded-sm pl-2 pb-1 pt-1 pr-2"><i class="feather-clock"></i> 10-15 min</span> <span class="float-right text-black-50"> R17.32 Per Litre</span></p>
                             </div>
                             <div class="list-card-badge">
@@ -89,7 +89,7 @@
                                 <h6 class="mb-1"><a href="restaurant.html" class="text-black">93 Octane (ULP)
                               </a>
                                 </h6>
-                                <p class="text-gray mb-3">Engen PRIMAX Unleaded petrol</p>
+                                <p class="text-gray mb-3">Engen PRIMAX Unleaded Petrol</p>
                                 <p class="text-gray mb-3 time"><span class="bg-light text-dark rounded-sm pl-2 pb-1 pt-1 pr-2"><i class="feather-clock"></i> 10-12 min</span> <span class="float-right text-black-50"> R17.10 Per Litre</span></p>
                             </div>
                             <div class="list-card-badge">
