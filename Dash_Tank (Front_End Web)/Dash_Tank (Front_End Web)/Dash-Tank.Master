@@ -285,8 +285,8 @@
                             <ul>
 
                                 <li><a href="NewRegister.aspx">Register</a></li>
-                                <li><a href="NewRegister.aspx">Register As Driver</a></li>
-                                <li><a href="NewRegister.aspx">Register As Supplier</a></li>
+                                <li><a href="RegisterDriver.aspx">Register As Driver</a></li>
+                                <li><a href="RegisterSupplier.aspx">Register As Supplier</a></li>
 
                             </ul>
                     </li>
