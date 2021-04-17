@@ -301,7 +301,7 @@
             <li><a href="restaurant.html"><i class="feather-paperclip mr-2"></i> Fuel station Detail</a></li>
             <li><a href="checkout.html"><i class="feather-list mr-2"></i> Checkout</a></li>
             <li><a href="successful.html"><i class="feather-check-circle mr-2"></i> Successful</a></li>
-            <li><a href="map.html"><i class="feather-map-pin mr-2"></i> Live Map</a></li>
+            <li><a href="Tracking.aspx"><i class="feather-map-pin mr-2"></i> Live Map</a></li>
             <li>
                 <a href="#"><i class="feather-user mr-2"></i> Profile</a>
                 <ul>
