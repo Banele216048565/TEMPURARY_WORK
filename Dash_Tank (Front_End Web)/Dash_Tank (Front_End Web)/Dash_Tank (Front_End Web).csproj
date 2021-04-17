@@ -188,6 +188,7 @@
     <Content Include="Products.aspx" />
     <Content Include="RegisterDriver.aspx" />
     <Content Include="RegisterSupplier.aspx" />
+    <Content Include="StatusComplete.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -306,6 +307,13 @@
     </Compile>
     <Compile Include="RegisterSupplier.aspx.designer.cs">
       <DependentUpon>RegisterSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatusComplete.aspx.cs">
+      <DependentUpon>StatusComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatusComplete.aspx.designer.cs">
+      <DependentUpon>StatusComplete.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserLogin.aspx.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
