@@ -115,7 +115,7 @@
                 <div class="col-md-4">
                     <div class="osahan-cart-item rounded rounded shadow-sm overflow-hidden bg-white sticky_sidebar">
                         <div class="d-flex border-bottom osahan-cart-item-profile bg-white p-3">
-                            <img alt="osahan" src="img/starter1.jpg" class="mr-3 rounded-circle img-fluid">
+                            
                             <div class="d-flex flex-column">
                                 <h6 class="mb-1 font-weight-bold">Shell</h6>
                                 <p class="mb-0 small text-muted"><i class="feather-map-pin"></i> 2036 2ND AVE, Johannesburg, 5023</p>
@@ -212,5 +212,54 @@
             </div>
         </div>
     </div>
-
+    <!-- modal delivery address -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Delivery Address</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form class="">
+                        <div class="form-row">
+                            <div class="col-md-12 form-group">
+                                <label class="form-label">Delivery Area</label>
+                                <div class="input-group">
+                                    <input placeholder="Delivery Area" type="text" class="form-control">
+                                    <div class="input-group-append"><button type="button" class="btn btn-outline-secondary"><i class="feather-map-pin"></i></button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 form-group"><label class="form-label">Complete Address</label><input placeholder="Complete Address e.g. house number, street name" type="text" class="form-control"></div>
+                            <div class="col-md-12 form-group"><label class="form-label">Delivery Instructions</label><input placeholder="Delivery Instructions e.g. landmarks" type="text" class="form-control"></div>
+                            <div class="mb-0 col-md-12 form-group">
+                                <label class="form-label">Nickname</label>
+                                <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+                                    <label class="btn btn-outline-secondary active">
+                              <input type="radio" name="options" id="option12" checked> Home
+                              </label>
+                                    <label class="btn btn-outline-secondary">
+                              <input type="radio" name="options" id="option22"> Work
+                              </label>
+                                    <label class="btn btn-outline-secondary">
+                              <input type="radio" name="options" id="option32"> Other
+                              </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer p-0 border-0">
+                    <div class="col-6 m-0 p-0">
+                        <button type="button" class="btn border-top btn-lg btn-block" data-dismiss="modal">Close</button>
+                    </div>
+                    <div class="col-6 m-0 p-0">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
