@@ -48,4 +48,7 @@ public interface IDashTankService
     [OperationContract]
     int AddRefund(String Reason,String AdminFeedback);
 
+    [OperationContract]
+    int RemoveUser(String Email);
+
 }

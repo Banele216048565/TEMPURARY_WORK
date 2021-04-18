@@ -73,4 +73,10 @@ public class DashTankService : IDashTankService
     {
         throw new NotImplementedException();
     }
+
+    int RemoveUser(String Email)
+    {
+        throw new NotImplementedException();
+
+    }
 }
