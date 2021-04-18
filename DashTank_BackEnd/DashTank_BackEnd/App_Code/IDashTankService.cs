@@ -10,10 +10,42 @@ using System.Text;
 public interface IDashTankService
 {
     [OperationContract]
-    void Login(String Email,String Password);
+    int Login(String Email,String Password);
 
     [OperationContract]
-    void Register(String name, String surname, String email, String contact, String Password, String ConfirmPassword);
+    int UserRegistration(String name, String surname, String email, String contact, String Password, String ConfirmPassword,String UserType);
 
     [OperationContract]
+    int AddOrder(DateTime OrderDate,DateTime OrderEstimatedArrival,String CarNumPlate);
+
+    [OperationContract]
+    int AddDriverInfor(DateTime DOB,String numPlate,String VehicleType,String gender,String LicenceNum,String VehicleName,int NumOrders,String image);
+
+    [OperationContract]
+    int AddClientInfo(String image);
+
+    [OperationContract]
+    int AddAdmin(String AdminAccess,String image);
+
+    [OperationContract]
+    int AddSupplierInfor(String Address,String GarageName);
+
+    [OperationContract]
+    int AddToCart(int itemQuantity,decimal itemPrice,decimal cartPrice);
+
+    [OperationContract]
+    int AddProduct(String ProName,String ProDescription,int SaleStatus,decimal ProPrice,decimal ProSalePrice,String ProImage,String ProHistory,String ProType);
+
+    [OperationContract]
+    int AddPromotion(String PromoCode,decimal PromoAmmount,int ValidityStatus);
+
+    [OperationContract]
+    int AddTransaction(DateTime TransDate,decimal TransAmmount,int TransStatus);
+
+    [OperationContract]
+    int AddReview(int rating,String Reason);
+
+    [OperationContract]
+    int AddRefund(String Reason,String AdminFeedback);
+
 }
