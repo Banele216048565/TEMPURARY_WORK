@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DashTankService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57020/DashTankService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57020/DashTankService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDashTankService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_UserRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_UserRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrder" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddDriverInfor_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDriverInfor" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddDriverInfor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDriverInforResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddClientInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddClientInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddClientInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddClientInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddSupplierInfor_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSupplierInfor" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddSupplierInfor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSupplierInforResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddToCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddToCart" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddToCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddToCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddProduct" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddPromotion_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPromotion" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddPromotion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPromotionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTransaction" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddReview" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddRefund_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddRefund" />
+  </wsdl:message>
+  <wsdl:message name="IDashTankService_AddRefund_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddRefundResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDashTankService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/Login" message="tns:IDashTankService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/LoginResponse" message="tns:IDashTankService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserRegistration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/UserRegistration" message="tns:IDashTankService_UserRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/UserRegistrationResponse" message="tns:IDashTankService_UserRegistration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddOrder" message="tns:IDashTankService_AddOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddOrderResponse" message="tns:IDashTankService_AddOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDriverInfor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddDriverInfor" message="tns:IDashTankService_AddDriverInfor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddDriverInforResponse" message="tns:IDashTankService_AddDriverInfor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddClientInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddClientInfo" message="tns:IDashTankService_AddClientInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddClientInfoResponse" message="tns:IDashTankService_AddClientInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddAdmin" message="tns:IDashTankService_AddAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddAdminResponse" message="tns:IDashTankService_AddAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSupplierInfor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddSupplierInfor" message="tns:IDashTankService_AddSupplierInfor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddSupplierInforResponse" message="tns:IDashTankService_AddSupplierInfor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddToCart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddToCart" message="tns:IDashTankService_AddToCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddToCartResponse" message="tns:IDashTankService_AddToCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddProduct" message="tns:IDashTankService_AddProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddProductResponse" message="tns:IDashTankService_AddProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPromotion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddPromotion" message="tns:IDashTankService_AddPromotion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddPromotionResponse" message="tns:IDashTankService_AddPromotion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTransaction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddTransaction" message="tns:IDashTankService_AddTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddTransactionResponse" message="tns:IDashTankService_AddTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddReview" message="tns:IDashTankService_AddReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddReviewResponse" message="tns:IDashTankService_AddReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRefund">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDashTankService/AddRefund" message="tns:IDashTankService_AddRefund_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDashTankService/AddRefundResponse" message="tns:IDashTankService_AddRefund_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDashTankService" type="tns:IDashTankService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserRegistration">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/UserRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOrder">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDriverInfor">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddDriverInfor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddClientInfo">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddClientInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAdmin">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSupplierInfor">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddSupplierInfor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddToCart">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddToCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProduct">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPromotion">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddPromotion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTransaction">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddReview">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRefund">
+      <soap:operation soapAction="http://tempuri.org/IDashTankService/AddRefund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DashTankService">
+    <wsdl:port name="BasicHttpBinding_IDashTankService" binding="tns:BasicHttpBinding_IDashTankService">
+      <soap:address location="http://localhost:57020/DashTankService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
