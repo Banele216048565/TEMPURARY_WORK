@@ -76,13 +76,9 @@
                                 </div>
                             </a>
                             <!-- offers -->
-                            <a href="offers.html" class="widget-header mr-4 text-white btn bg-primary m-none">
-                                <div class="icon d-flex align-items-center">
-                                    <i class="feather-disc h6 mr-2 mb-0"></i> <span>Offers</span>
-                                </div>
-                            </a>
+                            
                             <!-- signin -->
-                            <a href="Login.aspx" class="widget-header mr-4 text-dark m-none">
+                            <a href="UserLogin.aspx" class="widget-header mr-4 text-dark m-none">
                                 <div class="icon d-flex align-items-center">
                                     <i class="feather-user h6 mr-2 mb-0"></i> <span>Sign in</span>
                                 </div>
@@ -103,7 +99,7 @@
                                 </div>
                             </div>
                             <!-- signin -->
-                            <a href="checkout.html" class="widget-header mr-4 text-dark">
+                            <a href="Cart.aspx" class="widget-header mr-4 text-dark">
                                 <div class="icon d-flex align-items-center">
                                     <i class="feather-shopping-cart h6 mr-2 mb-0"></i> <span> My Cart</span>
                                 </div>
@@ -172,7 +168,7 @@
                             <div><img alt="#" src="img/logo_web.png" class="logo-footer mr-3"></div>
                             <div>
                                 <h6 class="title text-white">About Us</h6>
-                                <p class="text-muted">Some short text about company like You might remember the Dell computer commercials in which a youth reports.</p>
+                                <p class="text-muted">Dash-Tank is the most efficient way to deliver fuel to your doorstep.</p>
                                 <div class="d-flex align-items-center">
                                     <a class="btn btn-icon btn-outline-light mr-1 btn-sm" title="Facebook" target="_blank" href="#"><i class="feather-facebook"></i></a>
                                     <a class="btn btn-icon btn-outline-light mr-1 btn-sm" title="Instagram" target="_blank" href="#"><i class="feather-instagram"></i></a>
@@ -202,9 +198,9 @@
                     <aside class="col-sm-3  col-md-2 text-white">
                         <h6 class="title">For users</h6>
                         <ul class="list-unstyled hov_footer">
-                            <li> <a href="Login.aspx" class="text-muted"> User Login </a></li>
-                            <li> <a href="RegisterUser.aspx" class="text-muted"> User register </a></li>
-                            <li> <a href="forgot_password.html" class="text-muted"> Forgot Password </a></li>
+                            <li> <a href="UserLogin.aspx" class="text-muted"> User Login </a></li>
+                            <li> <a href="NewRegister.aspx" class="text-muted"> User register </a></li>
+                            <li> <a href="Account.aspx" class="text-muted"> Forgot Password </a></li>
                             <li> <a href="Account.aspx" class="text-muted"> Account Setting </a></li>
                         </ul>
                     </aside>
@@ -283,14 +279,14 @@
             <li>
                 <a href="#"><i class="feather-edit-2 mr-2"></i> Authentication</a>
                 <ul>
-                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="UserLogin.aspx">Login</a></li>
                     <li>
-                        <a href="RegisterUser.aspx"><i class="feather-edit-2 mr-2"></i> Register</a>
+                        <a href="#"><i class="feather-edit-2 mr-2"></i> Register</a>
                             <ul>
 
-                                <li><a href="RegisterUser.aspx">Register</a></li>
-                                <li><a href="RegisterUser.aspx">Register As Driver</a></li>
-                                <li><a href="RegisterUser.aspx">Register As Supplier</a></li>
+                                <li><a href="NewRegister.aspx">Register</a></li>
+                                <li><a href="RegisterDriver.aspx">Register As Driver</a></li>
+                                <li><a href="RegisterSupplier.aspx">Register As Supplier</a></li>
 
                             </ul>
                     </li>
@@ -305,7 +301,7 @@
             <li><a href="restaurant.html"><i class="feather-paperclip mr-2"></i> Fuel station Detail</a></li>
             <li><a href="checkout.html"><i class="feather-list mr-2"></i> Checkout</a></li>
             <li><a href="successful.html"><i class="feather-check-circle mr-2"></i> Successful</a></li>
-            <li><a href="map.html"><i class="feather-map-pin mr-2"></i> Live Map</a></li>
+            <li><a href="Tracking.aspx"><i class="feather-map-pin mr-2"></i> Live Map</a></li>
             <li>
                 <a href="#"><i class="feather-user mr-2"></i> Profile</a>
                 <ul>

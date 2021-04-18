@@ -2,44 +2,41 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- Filters -->
-        <div class="container">
-            <div class="cat-slider">
-                <div class="cat-item px-1 py-3">
-                    <a class="bg-white rounded d-block p-2 text-center shadow-sm" href="trending.html">
-                        <img alt="#" src="img/engen-350x350.png" class="img-fluid mb-2">
-                        <p class="m-0 small">Engen</p>
-                    </a>
-                </div>
-                <div class="cat-item px-1 py-3">
-                    <a class="bg-white rounded d-block p-2 text-center shadow-sm" href="trending.html">
-                        <img alt="#" src="img/Caltex_Logo.gif" class="img-fluid mb-2">
-                        <p class="m-0 small">Caltex</p>
-                    </a>
-                </div>
-                <div class="cat-item px-1 py-3">
-                    <a class="bg-white rounded d-block p-2 text-center shadow-sm" href="trending.html">
-                        <img alt="#" src="img/Shell-Logo.png" class="img-fluid mb-2">
-                        <p class="m-0 small">Shell</p>
-                    </a>
-                </div>
-                <div class="cat-item px-1 py-3">
-                    <a class="bg-white rounded d-block p-2 text-center shadow-sm" href="trending.html">
-                        <img alt="#" src="img/bp-logo-300x300.jpg" class="img-fluid mb-2">
-                        <p class="m-0 small">BP</p>
-                    </a>
-                </div>
-                <div class="cat-item px-1 py-3">
-                    <a class="bg-white rounded d-block p-2 text-center shadow-sm" href="trending.html">
-                        <img alt="#" src="img/Total-Logo.png" class="img-fluid mb-2">
-                        <p class="m-0 small">Total</p>
-                    </a>
-                </div>
-                <div class="cat-item px-1 py-3">
-                    <a class="bg-white rounded d-block p-2 text-center shadow-sm" href="trending.html">
-                        <img alt="#" src="img/Sasol-logo.jpg" class="img-fluid mb-2">
-                        <p class="m-0 small">Sasol</p>
-                    </a>
+    
+
+    <div class="bg-white">
+            <div class="container">
+                <div class="offer-slider">
+                    <div class="cat-item px-1 py-3">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
+                            <img alt="#" src="img/engen-350x350.png" class="img-fluid rounded">
+                        </a>
+                    </div>
+                    <div class="cat-item px-1 py-3">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
+                            <img alt="#" src="img/caltex-logo.jpg" class="img-fluid rounded">
+                        </a>
+                    </div>
+                    <div class="cat-item px-1 py-3">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
+                            <img alt="#" src="img/Shell-Logo.png" class="img-fluid rounded">
+                        </a>
+                    </div>
+                    <div class="cat-item px-1 py-3">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
+                            <img alt="#" src="img/bp-logo-300x300.jpg" class="img-fluid rounded">
+                        </a>
+                    </div>
+                    <div class="cat-item px-1 py-3">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
+                            <img alt="#" src="img/Total-Logo.png" class="img-fluid rounded">
+                        </a>
+                    </div>
+                    <div class="cat-item px-1 py-3">
+                        <a class="d-block text-center shadow-sm" href="Products.aspx">
+                            <img alt="#" src="img/Sasol-logo.jpg" class="img-fluid rounded">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,7 +64,7 @@
                                 <h6 class="mb-1"><a href="restaurant.html" class="text-black">95 Octane (ULP)
                               </a>
                                 </h6>
-                                <p class="text-gray mb-3">Engen PRIMAX Unleaded petrol</p>
+                                <p class="text-gray mb-3">Engen PRIMAX Unleaded Petrol</p>
                                 <p class="text-gray mb-3 time"><span class="bg-light text-dark rounded-sm pl-2 pb-1 pt-1 pr-2"><i class="feather-clock"></i> 10-15 min</span> <span class="float-right text-black-50"> R17.32 Per Litre</span></p>
                             </div>
                             <div class="list-card-badge">
@@ -92,7 +89,7 @@
                                 <h6 class="mb-1"><a href="restaurant.html" class="text-black">93 Octane (ULP)
                               </a>
                                 </h6>
-                                <p class="text-gray mb-3">Engen PRIMAX Unleaded petrol</p>
+                                <p class="text-gray mb-3">Engen PRIMAX Unleaded Petrol</p>
                                 <p class="text-gray mb-3 time"><span class="bg-light text-dark rounded-sm pl-2 pb-1 pt-1 pr-2"><i class="feather-clock"></i> 10-12 min</span> <span class="float-right text-black-50"> R17.10 Per Litre</span></p>
                             </div>
                             <div class="list-card-badge">
